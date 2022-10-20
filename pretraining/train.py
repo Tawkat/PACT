@@ -57,7 +57,7 @@ def train_model(args, model, checkpoint_save_prefix_path, gradient_accumulation_
         pass
     device = torch.device('cuda')
 
-    warmup_steps = int(0.1 * 150010) # 10% of training steps are used for warmup
+    warmup_steps = int(0.1 * total_steps) # 10% of training steps are used for warmup
     print ('total training steps is {}, warmup steps is {}'.format(total_steps, warmup_steps))
 
     from transformers.optimization import AdamW, get_linear_schedule_with_warmup
