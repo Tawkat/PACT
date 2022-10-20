@@ -39,5 +39,5 @@ chmod +x ./train_pact.sh
 All the experiments on English benchmarks are conducted using huggingface transformers library. You can find the instruction to finetune our model [here](https://github.com/huggingface/transformers/tree/main/examples/pytorch/text-classification)
 
 ## Acknowledgements
-[a link](https://github.com/user/repo/blob/branch/other_file.md)
+
 Parts of the code are modified from [BERT](https://github.com/jcyk/BERT) and [TaCL](https://github.com/yxuansu/TaCL). We appreciate the authors for making it open-sourced.
