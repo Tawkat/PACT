@@ -1,7 +1,7 @@
 # PACT
 Pretraining with Adversarial CL for Text Classification
 
-![plot](./Images/Framework_PACT.png)
+![plot](./Images/PACT.png)
 
 ## 1. Requirements:
 ```diff
