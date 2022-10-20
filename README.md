@@ -1,6 +1,8 @@
 # PACT
 Pretraining with Adversarial CL for Text Classification
 
+![plot](./Images/Framework_PACT.png)
+
 ## 1. Requirements:
 ```diff
 python version: 3.8
