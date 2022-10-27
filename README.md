@@ -40,6 +40,24 @@ chmod +x ./train_pact.sh
 
 All the experiments on English benchmarks are conducted using huggingface transformers library. You can find the instruction to finetune our model [here](https://github.com/huggingface/transformers/tree/main/examples/pytorch/text-classification)
 
+### Hyperparameter values for Validation Set
+
+| Dataset  | BS | LR |
+| ------------- | ------------- | ------------- |
+| CoLA  | 128  | 1e-5  |
+| SST-2  | 128  | 2e-5  |
+| MRPC  | 128  | 5e-5  |
+| QQP  | 128  | 3e-5  |
+| MNLI  | 128  | 3e-5  |
+| QNLI  | 128  | 3e-5  |
+| RTE  | 128  | 3e-5  |
+| NER  | 128  | 2e-5  |
+| POS  | 128  | 3e-5  |
+| NC  | 256  | 3e-5  |
+| QAM  | 256  | 5e-6  |
+| QADSM  | 256  | 3e-5  |
+| PAWSX  | 256  | 3e-5  |
+
 ## Acknowledgements
 
 Parts of the code are modified from [BERT](https://github.com/jcyk/BERT) and [TaCL](https://github.com/yxuansu/TaCL). We appreciate the authors for making it open-sourced.
