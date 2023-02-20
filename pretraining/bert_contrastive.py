@@ -307,13 +307,13 @@ class BERTContrastivePretraining(nn.Module):
         cont_loss_pooled = cont_crit(logits_pooled, labels)
 		
         if is_cuda:
-            new_loss = 0.4*tot_loss + 0.3*cont_loss + 0.3*cont_loss_pooled 
+            new_loss = tot_loss + cont_loss + cont_loss_pooled 
             
             return new_loss, torch.Tensor([mlm_correct_num]).cuda(device), torch.Tensor([tot_tokens]).cuda(device), \
             torch.Tensor([nxt_snt_correct_num]).cuda(device), torch.Tensor([correct_contrastive_num]).cuda(device),\
             torch.Tensor([total_contrastive_num]).cuda(device), tot_loss, cont_loss, cont_loss_pooled
         else:
-            new_loss = 0.5*tot_loss + 0.5*cont_loss
+            new_loss = tot_loss + cont_loss
             return new_loss, torch.Tensor([mlm_correct_num]), torch.Tensor([tot_tokens]), torch.Tensor([nxt_snt_correct_num]), \
             torch.Tensor([correct_contrastive_num]), torch.Tensor([total_contrastive_num])
 
