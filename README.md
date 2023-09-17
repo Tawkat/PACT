@@ -1,5 +1,5 @@
 # PACT
-Pretraining with Adversarial CL for Text Classification
+Pretraining with Adversarial CL for Text Classification accepted at IJCNLP-AACL 2023.
 
 ![plot](./Images/PACT.png)
 
